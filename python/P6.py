@@ -1,0 +1,6 @@
+row=6
+for row in range(1,row+1):
+    for col in range(row):
+        print("*", end=" ")
+    print()
+    
