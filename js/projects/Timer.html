@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer using Scheduler method</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link rel="stylesheet" href="/css/input.css"> -->
+</head>
+<body>
+    <section>
+        <div class="2xl:container mx-auto">
+            <div class="w-[90%] mx-auto">
+                <div class="flex flex-col items-center justify-center h-screen gap-5">
+                    <h1 id="timer_heading" class="font-[700] text-[32px] text-center">Timer</h1>
+                    <h1 id="timer" class="font-[700] text-[32px] text-center">0</h1>
+                    <div class="flex gap-6">
+                        <button id="b1" class="px-4 py-2 rounded-xl bg-green-700">Start</button>
+                        <button id="b2" class="px-4 py-2 rounded-xl bg-orange-700">Stop</button>
+                        <button id="b3" class="px-4 py-2 rounded-xl bg-red-700">Timer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Script -->
+    <script>
+        var timer = document.getElementById("timer");
+        var timer_button1 = document.getElementById("b1");
+        var timer_button2 = document.getElementById("b2");
+        var timer_button3 = document.getElementById("b3");
+        var setI;
+        <!-- setInterval it prints the number after one second gap For each execution 
+            <!-- ClearInterval is used to Stop the interval execution after the click Of Stop button-->
+        timer_button1.addEventListener("click", ()=>{
+            setI = setInterval(()=>{
+                timer.textContent = parseInt(timer.textContent) + 1;
+            },1000);
+        });
+        timer_button2.addEventListener("click", ()=>{
+            clearInterval(setI);
+        });
+        timer_button3.addEventListener("click",()=>{
+            setTimeout(()=>{
+                alert("Time Over");
+                clearInterval(setI);
+            },10000);
+        })
+    </script>
+</body>
+</html>
