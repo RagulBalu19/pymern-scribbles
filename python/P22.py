@@ -68,3 +68,19 @@ for e in range(1,row+1):
     for f in range(e,0,-1):
         print(f,end="")
     print()
+
+print("left triangle number pattern to merge ascending and descending order")
+'''
+This is Home Work Challenge
+1
+121
+12321
+1234321
+123454321
+'''
+for m in range(1,row+1):
+    for n in range (1,m+1):
+        print(n,end="")
+    for n in range(m-1,0,-1):
+        print(n,end="")
+    print()
