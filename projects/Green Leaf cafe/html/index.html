@@ -1,221 +1,777 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Green Cafe</title>
+    <title>GreenLeaf Cafe</title>
+
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <!-- Nav bar start -->
-    <nav class="bg-[#1B4332] sticky top-0">
+
+<body class="bg-white text-gray-800">
+
+    <!-- ================= NAVBAR START ================= -->
+
+    <nav class="sticky top-0 z-50 bg-[#1B4332] shadow-lg">
+
         <div class="2xl:container mx-auto">
-            <div class="w-[90%] mx-auto grid grid-cols-2 pb-3">
-                <div class="grid grid-cols-2">
-                    <img src="https://ik.imagekit.io/ix5gb5ztv/Green%20Cafe/Asset/logo-removebg-preview%20(1).png" alt="" class="w-[90px]">
-                </div>
-                <ul class="hidden lg:flex justify-center items-center text-nowrap gap-5 text-white">
-                    <li><a href="#C">Home</a></li>
-                    <li><a href="#E">About Us</a></li>
-                    <li><a href="#P">Menu</a></li>
-                    <li><a href="#F">Gallery</a></li>
-                    <li><a href="#CU">Contact</a></li>
-                    <button class="rounded-2xl bg-[#D4A373] px-3 py-1 hover:bg-[#C68B59]">Book Table</button>
+
+            <div class="w-[90%] mx-auto flex justify-between items-center h-20">
+
+                <!-- Logo -->
+
+                <a href="#">
+                    <img src="https://ik.imagekit.io/ix5gb5ztv/Green%20Cafe/Asset/logo-removebg-preview%20(1).png"
+                        alt="Green Cafe Logo"
+                        class="w-36 md:w-44">
+                </a>
+
+                <!-- Desktop Menu -->
+
+                <ul class="hidden lg:flex items-center gap-8 text-white font-medium">
+
+                    <li>
+                        <a href="#home" class="hover:text-[#74C69D] transition">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#about" class="hover:text-[#74C69D] transition">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#menu" class="hover:text-[#74C69D] transition">
+                            Menu
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#gallery" class="hover:text-[#74C69D] transition">
+                            Gallery
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#contact" class="hover:text-[#74C69D] transition">
+                            Contact
+                        </a>
+                    </li>
+
+                    <button
+                        class="bg-[#D4A373] hover:bg-[#C68B59] px-7 py-3 rounded-full transition text-white font-semibold">
+                        Book Table
+                    </button>
+
                 </ul>
-                <div class="lg:hidden block flex justify-end items-center">
-                <svg xmlns="http://www.w3.org/2000/svg"
-                    width="24" 
-                    height="24"
-                    viewBox="0 0 24 24" 
-                    fill="none" 
-                    stroke="currentColor" 
-                    stroke-width="2" 
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="lucide lucide-menu-icon lucide-menu">
-                    <path d="M4 5h16"/>
-                    <path d="M4 12h16"/>
-                    <path d="M4 19h16"/>
-                </svg>
-                </div>
+
+                <!-- Mobile Icon -->
+
+                <button class="lg:hidden text-white text-3xl">
+
+                    <i class="fa-solid fa-bars"></i>
+
+                </button>
+
             </div>
+
         </div>
+
     </nav>
-    <!-- Nav bar end -->
 
-    <!-- Hero Section start -->
-     <section class="">
-        <div class="2xl:container mx-auto bg-[url('https://ik.imagekit.io/ix5gb5ztv/Green%20Cafe/Asset/hero%20banner.jpg')] h-screen bg-no-repeat bg-cover bg-center">
-            <div class="w-[90%] mx-auto ">
-                <div class="flex flex-col items-start justify-end gap-4 h-[600px] text-white">
-                    <pre><h1 class="font-[500] text-6xl">Welcome to 
-<span class="text-[#1b4332]">GreenLeaf</span> Cafe</h1></pre>
-                    <ul class="flex gap-3">
-                        <li>Good Food</li>
-                        <li>&diamondsuit; Good Mood</li>
-                        <li>&diamondsuit; Great Coffee</li>
-                    </ul>
-                    <h5>Good Food Good Mood  Great coffee</h5>
-                    <p>A Cozy place to enjoy delicious food, freshly brewed coffee and unforgettable moments.</p>
-                    <button class="rounded-xl px-3 py-1 bg-[#39b883] w-fit">Explore Our Menu</button>
-                </div>
-            </div>
-        </div>
-     </section>
-    <!-- Hero Section end -->
+    <!-- ================= NAVBAR END ================= -->
 
 
-    <!-- Our Specialties start -->
-    <section class="py-10">
-        <div class="2xl:container mx-auto">
-            <div class="w-[90%] mx-auto">
-                <div class="flex flex-col justify-center items-center py-4">
-                    <h1 class="text-[32px] font-[600]">Our Specialties</h1>
-                    <p>Handpicked Favorites just for you</p>
-                </div>
-                <div class="flex gap-5">
-                    <div class="shadow-2xl rounded-2xl flex flex-col gap-2">
-                        <img src="https://ik.imagekit.io/ix5gb5ztv/Green%20Cafe/Asset/iloveimg-resized/Macchiato.jpg" alt="Macchiato" class="rounded-2xl">
-                        <div class="flex flex-col items-center justify-center gap-1">
-                            <h1 class="text-xl">Macchiato</h1>
-                            <h1 class="text-xl">$120</h1>
-                        </div>                      
-                    </div>
-                    <div class="shadow-2xl rounded-2xl flex flex-col gap-2">
-                        <img src="https://ik.imagekit.io/ix5gb5ztv/Green%20Cafe/Asset/veg.jpg" alt="" class="rounded-2xl">
-                        <div class="flex flex-col items-center justify-center gap-1">
-                            <h1 class="text-nowrap text-xl">Veg Sandwich</h1>
-                            <h1 class="text-xl">$180</h1>
+
+    <!-- ================= HERO SECTION START ================= -->
+
+    <section id="home">
+
+        <div class="relative h-screen bg-cover bg-center"
+            style="background-image:url('https://ik.imagekit.io/ix5gb5ztv/Green%20Cafe/Asset/hero%20banner.jpg');">
+
+            <!-- Overlay -->
+
+            <div class="absolute inset-0 bg-black/60"></div>
+
+            <!-- Content -->
+
+            <div class="relative z-10 h-full flex items-center">
+
+                <div class="2xl:container mx-auto">
+
+                    <div class="w-[90%] mx-auto">
+
+                        <div class="max-w-2xl text-white space-y-6">
+
+                            <h1
+                                class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+
+                                Welcome to
+
+                                <span class="text-[#74C69D]">
+
+                                    GreenLeaf Cafe
+
+                                </span>
+
+                            </h1>
+
+                            <div
+                                class="flex flex-wrap gap-4 text-sm md:text-lg text-gray-200">
+
+                                <span>
+                                    ☕ Fresh Coffee
+                                </span>
+
+                                <span>
+                                    🍽 Delicious Food
+                                </span>
+
+                                <span>
+                                    🌿 Cozy Atmosphere
+                                </span>
+
+                            </div>
+
+                            <h3 class="text-xl md:text-2xl font-semibold">
+
+                                Good Food • Good Mood • Great Coffee
+
+                            </h3>
+
+                            <p class="text-gray-200 leading-8 text-base md:text-lg">
+
+                                Experience freshly brewed coffee, handcrafted
+                                beverages, delicious meals, and warm hospitality.
+                                Whether you're catching up with friends,
+                                working remotely, or simply relaxing,
+                                GreenLeaf Cafe is the perfect place for every
+                                moment.
+
+                            </p>
+
+                            <div class="flex flex-wrap gap-5 pt-2">
+
+                                <button
+                                    class="bg-[#39b883] hover:bg-[#2e9d6f] transition duration-300 px-8 py-4 rounded-full text-lg font-semibold shadow-lg">
+
+                                    Explore Our Menu
+
+                                </button>
+
+                                <button
+                                    class="border-2 border-white hover:bg-white hover:text-[#1B4332] transition duration-300 px-8 py-4 rounded-full text-lg font-semibold">
+
+                                    Book a Table
+
+                                </button>
+
+                            </div>
+
                         </div>
+
                     </div>
-                    <div class="shadow-2xl rounded-2xl flex flex-col gap-2">
-                        <img src="https://ik.imagekit.io/ix5gb5ztv/Green%20Cafe/Asset/choco%20brownie.jpg" alt="" class="rounded-2xl">
-                        <div class="flex flex-col items-center justify-center gap-1">
-                            <h1 class="text-nowrap text-xl">Chocolate Brownie</h1>
-                            <h1 class="text-xl">$160</h1>
-                        </div>
-                    </div>
-                    <div class="shadow-2xl rounded-2xl flex flex-col gap-2">
-                       <img src="https://ik.imagekit.io/ix5gb5ztv/Green%20Cafe/Asset/iloveimg-resized/green%20tea.jpg" alt="Green Tea" class="rounded-2xl">
-                       <div class="flex flex-col items-center justify-center gap-1">
-                        <h1 class="text-xl">Green Tea</h1>
-                        <h1 class="text-xl">$120</h1>
-                       </div> 
-                    </div>
-                    
+
                 </div>
+
             </div>
+
         </div>
+
     </section>
-    <!-- Our Specialties end -->
 
-    <!-- Our journey start -->
-     <section class="py-10">
-        <div class="2xl:container mx-auto bg-[#1B4332]">
-            <div class="w-[90%] mx-auto flex items-center justify-center space-x-40 text-white p-10 sm:text-nowrap ">
-                <div class="flex flex-col items-center justify-center">
-                    <h1>5+</h1>
-                    <p>Years of Experience</p>
-                </div>
-                <div class="flex flex-col items-center justify-center">
-                    <h1>10K+</h1>
-                    <p>Happy Customers</p>
-                </div>
-                <div class="flex flex-col items-center justify-center">
-                    <h1>20+</h1>
-                    <p>Delicious Menu Items</p>
-                </div>
-                <div class="flex flex-col items-center justify-center">
-                    <h1>50K+</h1>
-                    <p>Cups of Coffee Served</p>
-                </div>
-            </div>
-        </div>
-     </section>
-    <!-- Our journey end -->
+    <!-- ================= HERO SECTION END ================= -->
+         <!-- ================= OUR SPECIALTIES START ================= -->
 
-    <!-- What our customers say start -->
-     <section class="py10">
-        <div class="2xl:conatiner mx-auto">
-            <div class="w-[90%] mx-auto">
-                <div class="text-center p-10 text-[28px] font-[500]">
-                    <h1>What Our Customers Say</h1>
-                </div>
-                <div class="flex gap-5 items-center ">
-                    <div class="flex flex-col justify-center items-center shadow-2xl rounded-2xl h-[200px] gap-5">
-                        <p>⭐⭐⭐⭐⭐</p>
-                        <p class="text-center">"The best coffee in town! 
-Amazing Ambience and friendly staff."</p>
-                        <div class="flex  gap-5 w-fit"> 
-                            <img src="" alt="profile pic" class="rounded-full border border-black">
-                            <h1 class="">- Priya S</h1>
-                        </div>
-                       
-                    </div>
-                    <div class="flex flex-col justify-center items-center shadow-2xl rounded-2xl h-[200px] gap-5 text-center">
-                        <p>⭐⭐⭐⭐⭐</p>
-                        <p>"The best coffee in town! Amazing Ambience and friendly staff."</p>
-                        <div class="flex  gap-5 w-fit"> 
-                            <img src="" alt="profile pic" class="rounded-full border border-black">
-                            <h1 class="">- Priya S</h1>
-                        </div>
-                    </div>
-                    <div class="flex flex-col justify-center items-center shadow-2xl rounded-2xl h-[200px] gap-5 text-center">
-                        <p>⭐⭐⭐⭐⭐</p>
-                        <p>"The best coffee in town! Amazing Ambience and friendly staff."</p>
-                        <div class="flex  gap-5 w-fit"> 
-                            <img src="" alt="profile pic" class="rounded-full border border-black">
-                            <h1 class="">- Priya S</h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> 
-     </section>
-    <!-- What our customers say end -->
+    <section class="py-16 bg-white" id="menu">
 
-    <!-- Stay Updated start -->
-     <section class="py-10">
-        <div class="2xl:container mx-auto bg-[#1B4332]">
-            <div class="w-[90%] mx-auto flex flex-col justify-center items-center gap-5 text-white p-5">
-                <h1 class="text-[28px] font-[500]">Stay Updated</h1>
-                <p class="text-slate-200 text-sm">Subscribe to our Channel for our exclusive offers & updates.</p>
-                <div class="w-fit rounded-2xl p-1 grid grid-cols-2 rounded-l-2xl ">
-                     <input type="email" name="email" id="email" placeholder="Enter a Email" class="rounded-l-lg px-3 py-1">
-                     <button type="button" class="bg-yellow-500 px-3 py-1 rounded-r-lg">Subscribe</button>
-                </div>
-               
-            </div>
-        </div>
-     </section>
-    <!-- Stay Updated end -->
-
-
-    <!-- Footer Section start -->
-     <section>
         <div class="2xl:container mx-auto">
+
             <div class="w-[90%] mx-auto">
-                <div>
-                    <img src="" alt="logo">
-                    <h1>GreenLeaf Cafe</h1>
+
+                <div class="text-center mb-12">
+
+                    <h2 class="text-3xl md:text-4xl font-bold text-[#1B4332]">
+                        Our Specialties
+                    </h2>
+
+                    <p class="text-gray-500 mt-3">
+                        Handpicked favorites crafted with love and fresh ingredients.
+                    </p>
+
                 </div>
-                <div>
-                    <h1>Quick Links</h1>
-                    
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                    <!-- Card 1 -->
+
+                    <div
+                        class="bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl">
+
+                        <img src="https://ik.imagekit.io/ix5gb5ztv/Green%20Cafe/Asset/iloveimg-resized/Macchiato.jpg"
+                            alt="Macchiato"
+                            class="h-64 w-full object-cover">
+
+                        <div class="p-6 text-center">
+
+                            <h3 class="text-xl font-semibold">
+                                Macchiato
+                            </h3>
+
+                            <p class="text-gray-500 text-sm mt-3">
+                                Rich espresso blended with creamy milk foam,
+                                delivering a bold yet smooth coffee experience.
+                            </p>
+
+                            <h4 class="mt-4 text-2xl font-bold text-[#D4A373]">
+                                ₹120
+                            </h4>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Card 2 -->
+
+                    <div
+                        class="bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl">
+
+                        <img src="https://ik.imagekit.io/ix5gb5ztv/Green%20Cafe/Asset/veg.jpg"
+                            alt="Veg Sandwich"
+                            class="h-64 w-full object-cover">
+
+                        <div class="p-6 text-center">
+
+                            <h3 class="text-xl font-semibold">
+                                Veg Sandwich
+                            </h3>
+
+                            <p class="text-gray-500 text-sm mt-3">
+                                Crispy toasted bread filled with fresh vegetables,
+                                cheese, and flavorful homemade sauces.
+                            </p>
+
+                            <h4 class="mt-4 text-2xl font-bold text-[#D4A373]">
+                                ₹180
+                            </h4>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Card 3 -->
+
+                    <div
+                        class="bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl">
+
+                        <img src="https://ik.imagekit.io/ix5gb5ztv/Green%20Cafe/Asset/choco%20brownie.jpg"
+                            alt="Brownie"
+                            class="h-64 w-full object-cover">
+
+                        <div class="p-6 text-center">
+
+                            <h3 class="text-xl font-semibold">
+                                Chocolate Brownie
+                            </h3>
+
+                            <p class="text-gray-500 text-sm mt-3">
+                                Warm, rich chocolate brownie topped with a soft,
+                                fudgy center that melts in every bite.
+                            </p>
+
+                            <h4 class="mt-4 text-2xl font-bold text-[#D4A373]">
+                                ₹160
+                            </h4>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Card 4 -->
+
+                    <div
+                        class="bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl">
+
+                        <img src="https://ik.imagekit.io/ix5gb5ztv/Green%20Cafe/Asset/iloveimg-resized/green%20tea.jpg"
+                            alt="Green Tea"
+                            class="h-64 w-full object-cover">
+
+                        <div class="p-6 text-center">
+
+                            <h3 class="text-xl font-semibold">
+                                Green Tea
+                            </h3>
+
+                            <p class="text-gray-500 text-sm mt-3">
+                                Refreshing organic green tea packed with natural
+                                antioxidants for a healthy lifestyle.
+                            </p>
+
+                            <h4 class="mt-4 text-2xl font-bold text-[#D4A373]">
+                                ₹120
+                            </h4>
+
+                        </div>
+
+                    </div>
+
                 </div>
-                <div>
-                    <h1></h1>
-                </div>
-                <div>
-                    <h1></h1>
-                </div>
-                <div>
-                    <h1></h1>
-                </div>
+
             </div>
+
         </div>
-     </section>
-    <!-- Footer Section end -->
+
+    </section>
+
+    <!-- ================= OUR SPECIALTIES END ================= -->
+
+
+
+
+
+    <!-- ================= STATISTICS START ================= -->
+
+    <section class="py-16 bg-[#1B4332]">
+
+        <div class="2xl:container mx-auto">
+
+            <div class="w-[90%] mx-auto">
+
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center text-white">
+
+                    <div>
+
+                        <h2 class="text-5xl font-bold text-[#74C69D]">
+                            5+
+                        </h2>
+
+                        <p class="mt-3">
+                            Years of Experience
+                        </p>
+
+                    </div>
+
+                    <div>
+
+                        <h2 class="text-5xl font-bold text-[#74C69D]">
+                            10K+
+                        </h2>
+
+                        <p class="mt-3">
+                            Happy Customers
+                        </p>
+
+                    </div>
+
+                    <div>
+
+                        <h2 class="text-5xl font-bold text-[#74C69D]">
+                            20+
+                        </h2>
+
+                        <p class="mt-3">
+                            Signature Dishes
+                        </p>
+
+                    </div>
+
+                    <div>
+
+                        <h2 class="text-5xl font-bold text-[#74C69D]">
+                            50K+
+                        </h2>
+
+                        <p class="mt-3">
+                            Cups of Coffee Served
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= STATISTICS END ================= -->
+
+
+
+
+
+
+    <!-- ================= TESTIMONIALS START ================= -->
+
+    <section class="py-16 bg-gray-50">
+
+        <div class="2xl:container mx-auto">
+
+            <div class="w-[90%] mx-auto">
+
+                <div class="text-center mb-12">
+
+                    <h2 class="text-3xl md:text-4xl font-bold text-[#1B4332]">
+                        What Our Customers Say
+                    </h2>
+
+                    <p class="text-gray-500 mt-3">
+                        Our guests love the delicious food, fresh coffee, and cozy ambience.
+                    </p>
+
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                    <!-- Review 1 -->
+
+                    <div
+                        class="bg-white rounded-2xl shadow-lg p-8 text-center transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl">
+
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg"
+                            class="w-20 h-20 rounded-full mx-auto object-cover mb-5">
+
+                        <div class="text-yellow-400 mb-4">
+
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+
+                        </div>
+
+                        <p class="text-gray-600 italic">
+
+                            "The best coffee in town! Amazing ambience,
+                            delicious food, and wonderful customer service."
+
+                        </p>
+
+                        <h4 class="mt-5 font-semibold">
+                            Priya S.
+                        </h4>
+
+                    </div>
+
+                    <!-- Review 2 -->
+
+                    <div
+                        class="bg-white rounded-2xl shadow-lg p-8 text-center transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl">
+
+                        <img src="https://randomuser.me/api/portraits/men/36.jpg"
+                            class="w-20 h-20 rounded-full mx-auto object-cover mb-5">
+
+                        <div class="text-yellow-400 mb-4">
+
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+
+                        </div>
+
+                        <p class="text-gray-600 italic">
+
+                            "Excellent service, fresh ingredients,
+                            and a peaceful atmosphere. Highly recommended."
+
+                        </p>
+
+                        <h4 class="mt-5 font-semibold">
+                            Rahul K.
+                        </h4>
+
+                    </div>
+
+                    <!-- Review 3 -->
+
+                    <div
+                        class="bg-white rounded-2xl shadow-lg p-8 text-center transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl">
+
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg"
+                            class="w-20 h-20 rounded-full mx-auto object-cover mb-5">
+
+                        <div class="text-yellow-400 mb-4">
+
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+
+                        </div>
+
+                        <p class="text-gray-600 italic">
+
+                            "Every visit feels special. Their desserts and coffee
+                            are simply outstanding."
+
+                        </p>
+
+                        <h4 class="mt-5 font-semibold">
+                            Sneha M.
+                        </h4>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= TESTIMONIALS END ================= -->
+         <!-- ================= NEWSLETTER START ================= -->
+
+    <section class="py-16 bg-[#1B4332]">
+
+        <div class="2xl:container mx-auto">
+
+            <div class="w-[90%] mx-auto text-center text-white">
+
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                    Stay Updated
+                </h2>
+
+                <p class="text-gray-300 mb-10 max-w-2xl mx-auto">
+                    Subscribe to our newsletter and be the first to receive
+                    exclusive offers, new menu launches, seasonal specials,
+                    and exciting updates from GreenLeaf Cafe.
+                </p>
+
+                <div class="flex flex-col md:flex-row justify-center items-center gap-4 max-w-2xl mx-auto">
+
+                    <input
+                        type="email"
+                        placeholder="Enter your email address"
+                        class="w-full px-6 py-4 rounded-full text-gray-800 outline-none shadow-lg">
+
+                    <button
+                        class="bg-[#D4A373] hover:bg-[#C68B59] transition-all duration-300 px-8 py-4 rounded-full font-semibold text-white shadow-lg hover:scale-105">
+
+                        Subscribe
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= NEWSLETTER END ================= -->
+
+
+
+
+
+    <!-- ================= FOOTER START ================= -->
+
+    <footer class="bg-[#143726] text-white pt-16 pb-6">
+
+        <div class="2xl:container mx-auto">
+
+            <div class="w-[90%] mx-auto">
+
+                <!-- Footer Grid -->
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-10">
+
+                    <!-- About -->
+
+                    <div>
+
+                        <img src="https://ik.imagekit.io/ix5gb5ztv/Green%20Cafe/Asset/logo-removebg-preview%20(1).png"
+                            alt="Green Cafe Logo"
+                            class="w-40 mb-5">
+
+                        <h3 class="text-2xl font-semibold mb-4">
+                            GreenLeaf Cafe
+                        </h3>
+
+                        <p class="text-gray-300 leading-7">
+
+                            Thank you for being part of our journey.
+                            We serve delicious food, handcrafted coffee,
+                            and unforgettable moments every day.
+
+                        </p>
+
+                    </div>
+
+                    <!-- Quick Links -->
+
+                    <div>
+
+                        <h3 class="text-xl font-semibold mb-5">
+                            Quick Links
+                        </h3>
+
+                        <ul class="space-y-3 text-gray-300">
+
+                            <li>
+                                <a href="#" class="hover:text-[#74C69D] transition">
+                                    Home
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="hover:text-[#74C69D] transition">
+                                    About Us
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="hover:text-[#74C69D] transition">
+                                    Menu
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="hover:text-[#74C69D] transition">
+                                    Gallery
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="hover:text-[#74C69D] transition">
+                                    Contact
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <!-- Menu -->
+
+                    <div>
+
+                        <h3 class="text-xl font-semibold mb-5">
+                            Our Menu
+                        </h3>
+
+                        <ul class="space-y-3 text-gray-300">
+
+                            <li>Coffee</li>
+                            <li>Tea</li>
+                            <li>Breakfast</li>
+                            <li>Sandwiches</li>
+                            <li>Desserts</li>
+
+                        </ul>
+
+                    </div>
+
+                    <!-- Contact -->
+
+                    <div>
+
+                        <h3 class="text-xl font-semibold mb-5">
+                            Contact Info
+                        </h3>
+
+                        <div class="space-y-4 text-gray-300">
+
+                            <p>
+                                <i class="fa-solid fa-location-dot text-[#74C69D] mr-3"></i>
+
+                                123 Green Street,
+                                Coimbatore,
+                                Tamil Nadu 641001
+                            </p>
+
+                            <p>
+                                <i class="fa-solid fa-phone text-[#74C69D] mr-3"></i>
+
+                                +91 98765 43210
+                            </p>
+
+                            <p>
+                                <i class="fa-solid fa-envelope text-[#74C69D] mr-3"></i>
+
+                                hello@greenleafcafe.com
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Bottom Footer -->
+
+                <div
+                    class="border-t border-gray-700 pt-6 flex flex-col md:flex-row justify-between items-center gap-5">
+
+                    <p class="text-gray-400 text-center">
+
+                        © 2025 GreenLeaf Cafe. All Rights Reserved.
+
+                    </p>
+
+                    <!-- Social Icons -->
+
+                    <div class="flex gap-5 text-xl">
+
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-white/10 hover:bg-[#74C69D] transition flex justify-center items-center">
+
+                            <i class="fab fa-facebook-f"></i>
+
+                        </a>
+
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-white/10 hover:bg-[#74C69D] transition flex justify-center items-center">
+
+                            <i class="fab fa-instagram"></i>
+
+                        </a>
+
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-white/10 hover:bg-[#74C69D] transition flex justify-center items-center">
+
+                            <i class="fab fa-twitter"></i>
+
+                        </a>
+
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-white/10 hover:bg-[#74C69D] transition flex justify-center items-center">
+
+                            <i class="fab fa-youtube"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- ================= FOOTER END ================= -->
+
 </body>
+
 </html>
