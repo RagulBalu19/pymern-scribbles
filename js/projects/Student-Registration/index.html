@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <!-- Tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <!-- Firebase connection -->
+    <!--FireBase SDK-->
+    <!-- <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase.js"></script> -->
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+</head>
+<body>
+    <div class="2xl:container mx-auto bg-pink-600">
+        <div class="w-[90%] mx-auto flex justify-center h-screen items-center">
+            <div class="bg-slate-300 rounded-3xl p-5">
+                <h1 class="text-3xl font-bold text-center mb-5">Student Registration</h1>
+                <form action="" class="grid gap-5 w-full" id="form">
+                    <div>
+                        <label for="name">Name: </label><br>
+                        <input type="text" name="name" id="name" class="border w-full p-2 rounded outline-none focus:ring-2 focus:ring-blue-500">
+                        <p id="errName" class="text-red-600 font-mono text-lg font-semibold"></p>
+                    </div>
+                    <div>
+                        <label for="email">Email: </label><br>
+                        <input type="text" name="email" id="email" class="border w-full p-2 rounded outline-none focus:ring-2 focus:ring-blue-500">
+                        <p id="errEmail" class="text-red-600 font-mono text-lg font-semibold"></p>
+                    </div>
+                    <div>
+                        <label for="age">Age: </label><br>
+                        <input type="number" name="age" id="age" class="border w-full p-2 rounded outline-none focus:ring-2 focus:ring-blue-500">
+                        <p id="errAge" class="text-red-600 font-mono text-lg font-semibold"></p>
+                    </div>
+                    <div>
+                        <label for="course">Course: </label><br>
+                        <input type="text" name="course" id="course" class="border w-full p-2 rounded outline-none focus:ring-2 focus:ring-blue-500">
+                        <p id="errCourse" class="text-red-600 font-mono text-lg font-semibold"></p>
+                    </div>
+                    <div >
+                        <button type="submit" class="bg-green-600 hover:bg-green-700 text-white w-full py-3 rounded-lg transition">Submit</button>
+                    </div>
+                </form>  
+                <div id="success" class="text-green-600 font-semibold mt-2 text-center"></div>
+
+                <div>
+                    <h2 class="text-center font-mono font-semibold mb-4 mt-8">Registered Students</h2>
+
+                    <table class="border border-collapse w-full text-center">
+                        <thead>
+                            <th class="border p-2">Name</th>
+                            <th class="border p-2">Email</th>
+                            <th class="border p-2">Age</th>
+                            <th class="border p-2">Course</th>
+                        </thead>
+                        
+                        <tbody id="studentList"> </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- <script src="../Student-Registration/firebase.js"></script> -->
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+<script src="../Student-Registration/Scripit.js"></script>
+</body>
+
+</html>
