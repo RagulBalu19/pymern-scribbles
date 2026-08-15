@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Project</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <section>
+        <div class="2xl:container mx-auto bg-black" id="bg">
+            <div class="w-[90%] mx-auto flex flex-col  justify-center items-center h-screen gap-5">
+                <div class="flex flex-col justify-center items-center">
+                    <img src="https://ik.imagekit.io/ix5gb5ztv/pngwing.com%20(1).png" alt="black cat" class="h-[225px] w-fit bg-center bg-cover bg-no-repeat" id="light">
+                    <img src="https://ik.imagekit.io/ix5gb5ztv/Gemini_Generated_Image_8nv9668nv9668nv9-removebg-preview.png" alt="yellow light" class="h-[225px] w-28" id="cat">
+                    
+                </div>
+                <div class="bg-gray-400 rounded-lg flex flex-col justify-center items-center gap-6 w-fit">
+                    <h1 id="h1" class="text-[28px] font-[600]">Switched on</h1>
+                    <div class="flex gap-5 px-5 py-5 ">
+                        <button class="border border-black bg-slate-500 px-4 py-2 rounded-2xl text-white" id="on">ON</button>
+                        <button class="border border-black bg-red-700 px-4 py-2 rounded-2xl text-white" id="off">OFF</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Script -->
+<script>
+    var c1 = document.getElementById("cat");
+    var l1 = document.getElementById("light");
+    var content = document.getElementById("h1");
+    var b1 = document.getElementById("on");
+    var b2 = document.getElementById("off");
+    var bg = document.getElementById("bg");
+    console.dir(c1);
+    console.dir(l1);
+    b1.addEventListener("click", ()=>{
+        c1.src = "https://ik.imagekit.io/ix5gb5ztv/Gemini_Generated_Image_8nv9668nv9668nv9-removebg-preview.png?updatedAt=1783155762969";
+        l1.src = "https://ik.imagekit.io/ix5gb5ztv/pngwing.com%20(1).png?updatedAt=1783154931160"
+        content.textContent = "Switched ON";
+        b1.style.background = "green"
+    });
+    b2.addEventListener("click", ()=>{
+        c1.src ="https://ik.imagekit.io/ix5gb5ztv/pngwing.com__3_-removebg-preview.png?updatedAt=1783155762942";
+        l1.src = "https://ik.imagekit.io/ix5gb5ztv/pngwing.com%20(2).png?updatedAt=1783154932747";
+        content.textContent = "Switched OFF";
+        b1.style.background = "rgb(100 116 139)";
+    })
+</script>
+        
+</body>
+</html>

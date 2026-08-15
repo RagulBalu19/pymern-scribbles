@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation Using Javascript</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+   
+
+</head>
+<body>
+
+
+    <div class="2xl:container mx-auto bg-red-300">
+        <div class="w-[90%] mx-auto flex justify-center items-center h-screen">
+            <div class="bg-white/35 rounded-2xl p-5">
+                <h1 class="text-center font-bold text-[40px]">Login Form</h1>
+                <hr>
+                <form class="py-10 flex flex-col gap-5 justify-center items-center" id="f1">
+                    
+                    <div>
+                        <label for="" class="font-bold">E-MAIL:</label><br>
+                        <input class="rounded-lg" type="text" name="email" id="email">
+                        <p id="errEmail" class="text-red-600"></p>
+                    </div>
+                    <div>
+                        <label for="" class="font-bold">PASSWORD:</label><br>
+                        <input class="rounded-lg" type="text" name="pwd" id="pwd">
+                        <p id="errpwd" class="text-red-600"></p>
+                    </div>
+                    <button class="p-3 bg-green-500 rounded-2xl font-bold text-white" id="submit">LOGIN</button>
+                </form>
+            </div>
+        </div>
+    </div>
+<script src="../Day6.js"></script>
+</body>
+
+</html>
